@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FonsecaTech - Accesorios tecnológicos en La Unión</title>
+<meta name="description" content="Tienda en línea de Comercial Fonseca, S.A. de C.V. Envíos a todo El Salvador.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#inicio">Fonseca<span>Tech</span></a>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#tienda">Tienda</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <button id="abrir-carrito" class="cart-btn" aria-label="Abrir carrito">🛒 Carrito <b id="contador">0</b></button>
+</header>
+
+<section id="inicio" class="hero">
+  <h1>Accesorios tecnológicos para tu día a día</h1>
+  <p>Audífonos, bocinas, memorias, mouse y teclados. Envío a todo El Salvador: $3.50, gratis en compras desde $50.00.</p>
+  <a class="btn" href="#tienda">Ver productos</a>
+</section>
+
+<main id="tienda">
+  <h2>Nuestros productos</h2>
+  <p class="nota">Precios sin IVA. El IVA (13%) se calcula en el carrito.</p>
+  <div class="grid">
+    <article class="card">
+      <img src="images/audifonos-ft200.png" alt="Audífonos FT200">
+      <span class="tag">Audio</span>
+      <h3>Audífonos FT200</h3>
+      <p>Diadema cómoda y almohadillas acolchadas.</p>
+      <div class="row"><strong>$29.99</strong><button class="btn add" data-id="ft200" data-name="Audífonos FT200" data-price="29.99">Agregar</button></div>
+    </article>
+    <article class="card">
+      <img src="images/bocina-ftboom.png" alt="Bocina FT-Boom">
+      <span class="tag">Audio</span>
+      <h3>Bocina FT-Boom</h3>
+      <p>Bocina portátil con controles de volumen.</p>
+      <div class="row"><strong>$24.99</strong><button class="btn add" data-id="ftboom" data-name="Bocina FT-Boom" data-price="24.99">Agregar</button></div>
+    </article>
+    <article class="card">
+      <img src="images/memoria-ftdrive.png" alt="Memoria FT-Drive 64 GB">
+      <span class="tag">Almacenamiento</span>
+      <h3>Memoria FT-Drive 64 GB</h3>
+      <p>Memoria USB con llavero, 64 GB.</p>
+      <div class="row"><strong>$9.99</strong><button class="btn add" data-id="ftdrive" data-name="Memoria FT-Drive 64 GB" data-price="9.99">Agregar</button></div>
+    </article>
+    <article class="card">
+      <img src="images/mouse-ftclick.png" alt="Mouse FT-Click">
+      <span class="tag">Periféricos</span>
+      <h3>Mouse FT-Click</h3>
+      <p>Mouse inalámbrico con receptor USB.</p>
+      <div class="row"><strong>$12.99</strong><button class="btn add" data-id="ftclick" data-name="Mouse FT-Click" data-price="12.99">Agregar</button></div>
+    </article>
+    <article class="card">
+      <img src="images/teclado-ftkey.png" alt="Teclado FT-Key">
+      <span class="tag">Periféricos</span>
+      <h3>Teclado FT-Key</h3>
+      <p>Teclado compacto con cable USB e iluminación.</p>
+      <div class="row"><strong>$34.99</strong><button class="btn add" data-id="ftkey" data-name="Teclado FT-Key" data-price="34.99">Agregar</button></div>
+    </article>
+  </div>
+</main>
+
+<footer id="contacto">
+  <p><strong>Comercial Fonseca, S.A. de C.V.</strong> · La Unión, El Salvador</p>
+  <p>Ventas y envíos únicamente en El Salvador · © 2026 FonsecaTech</p>
+</footer>
+
+<div id="fondo" class="fondo" hidden></div>
+<aside id="carrito" class="carrito" aria-label="Carrito de compras">
+  <div class="carrito-head"><h2>Tu carrito</h2><button id="cerrar-carrito" aria-label="Cerrar">✕</button></div>
+  <div id="lineas"></div>
+  <dl class="totales">
+    <dt>Subtotal</dt><dd id="t-sub">$0.00</dd>
+    <dt>Envío</dt><dd id="t-env">$0.00</dd>
+    <dt>IVA (13%)</dt><dd id="t-iva">$0.00</dd>
+    <dt class="total">Total</dt><dd id="t-tot" class="total">$0.00</dd>
+  </dl>
+  <button id="pagar" class="btn full">Finalizar compra</button>
+</aside>
+<script src="script.js"></script>
+</body>
+</html>
